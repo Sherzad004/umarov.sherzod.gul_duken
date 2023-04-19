@@ -68,7 +68,7 @@ int main() {
   cout << "\t\t\t\t\t * Flower Shop  *" << endl;
   cout << "\t\t\t\t\t*****************" << endl;
   cout << "\t\t\t\tTizimder:" << endl;
-  cout << "\t\t\t\t1.-Buket" << endl << "\t\t\t\t2.-Dana gulder" <<endl<<"\t\t\t\t3.-Poisk"<<endl<<"\t\t\t\t0.-Bagdarlamadan shygu ushin tizimdeginen basqa tanba engiziniz"<<endl;
+  cout << "\t\t\t\t1.-Buket" << endl << "\t\t\t\t2.-Dana gulder" <<endl<<"\t\t\t\t3.-Izdeu(Poisk)"<<endl<<"\t\t\t\t0.-Bagdarlamadan shygu ushin tizimdeginen basqa tanba engiziniz"<<endl;
   cout<<"\t\t\t\t";
   int a, b, c,sht, car;
   cin >> a;
