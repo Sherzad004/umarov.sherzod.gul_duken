@@ -39,11 +39,11 @@ void guls(gul s) {
   cout <<"-------------------------------"<<endl;
 }
 void zak(int sum, int car) {
-  cout << "Tapsyryz  " << sum << " tenge boldy" << endl;
-  cout << "Zakaz beru ushin card nomer engiziniz:  ";
+  cout << "\t\t\t\tTapsyryz  " << sum << " tenge boldy" << endl;
+  cout << "\t\t\t\tZakaz beru ushin card nomer engiziniz:  ";
   cin >> car;
-  cout << "Tapsyrys qabyldandy " << endl
-       << "Tapsyryz dayn bolganda habarlaimyz" << endl;
+  cout << "\t\t\t\tTapsyrys qabyldandy " << endl
+       << "\t\t\t\tTapsyryz dayn bolganda habarlaimyz" << endl;
 }
 
 int main() {
@@ -59,30 +59,31 @@ int main() {
                 {7, "Pion", "Qyzgylt", "60-100", 1200},
                 {8, "Astra", "Aq", "60-70", 400}};
   buket arr[m] = {
-      {1, "Cvet prime", "Roza", 7, 50, "plenka", 8900},
-      {2, "DI Flowers", "Alstremia", 12, 80, "aqva bumaga", 9800},
-      {3, "Studio Flowers", "Roza jane Gerbera", 6, 30, "plenka", 6500},
+      {1, "Cvets", "Roza", 7, 50, "plenka", 8900},
+      {2, "DI", "Alstremia", 12, 80, "aqva bumaga", 9800},
+      {3, "Studio", "Roza jane Gerbera", 6, 30, "plenka", 6500},
       {4, "Prime", "Astra", 25, 70, "bumaga", 23900},
       {5, "Cvetogis", "Roza", 101, 50, "aqva bumaga", 70000}};
-  cout << "   *****************" << endl;
-  cout << "   *  Flower Shop  *" << endl;
-  cout << "   *****************" << endl;
-  cout << "Siz ne tapsyrys berginiz keledi:" << endl;
-  cout << "1.Buket" << endl << "2.Dana gulder" <<endl<<"0.Bagdarlamadan shygu ushin kez kelgen  tanbany engiziniz"<<endl;
+  cout << "\t\t\t\t\t*****************" << endl;
+  cout << "\t\t\t\t\t * Flower Shop  *" << endl;
+  cout << "\t\t\t\t\t*****************" << endl;
+  cout << "\t\t\t\tSiz ne tapsyrys berginiz keledi:" << endl;
+  cout << "\t\t\t\t1.-Buket" << endl << "\t\t\t\t2.-Dana gulder" <<endl<<"\t\t\t\t3.-Poisk"<<endl<<"\t\t\t\t0.-Bagdarlamadan shygu ushin kez kelgen  tanbany engiziniz"<<endl;
+  cout<<"\t\t\t\t";
   int a, b, c,sht, car;
   cin >> a;
   switch (a) {
     case 1:
-      cout << "Siz Buket tandadynyz" << endl;
+      cout << "\t\t\t\tSiz Buket tandadynyz" << endl;
       for (int i = 0; i < m; i++) {
         bukets(arr[i]);
       }
-      cout << "Tapsyrys beriniz:" << endl;
+      cout << "\t\t\t\tTapsyrys beriniz:" << endl;
       cin >> b;
       switch (b) {
         case 1:
-          cout << "Siz Cvet prime tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz Cvet prime tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += arr[b - 1].bukbag;
@@ -90,8 +91,8 @@ int main() {
           zak(sum, car);
           break;
         case 2:
-          cout << "Siz Di Flowers tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz Di Flowers tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += arr[b - 1].bukbag;
@@ -99,8 +100,8 @@ int main() {
           zak(sum, car);
           break;
         case 3:
-          cout << "Siz Studio flower tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz Studio flower tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += arr[b - 1].bukbag;
@@ -108,8 +109,8 @@ int main() {
           zak(sum, car);
           break;
         case 4:
-          cout << "Siz Prime tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz Prime tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += arr[b - 1].bukbag;
@@ -117,8 +118,8 @@ int main() {
           zak(sum, car);
           break;
         case 5:
-          cout << "Siz Cvetogis tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz Cvetogis tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += arr[b - 1].bukbag;
@@ -126,20 +127,20 @@ int main() {
           zak(sum, car);
           break;
         default:
-          cout << "Qate nomer tandadynyz!";
+          cout << "\t\t\t\tQate nomer tandadynyz!";
       }
           break;
     case 2:
-      cout << "Siz  Dana gulder tandadynyz:" << endl;
+      cout << "\t\t\t\tSiz  Dana gulder tandadynyz:" << endl;
       for (int i = 0; i < n; i++) {
         guls(mas[i]);
       }
-      cout << "Tapsyrys beriniz:" << endl; 
+      cout << "\t\t\t\tTapsyrys beriniz:" << endl; 
       cin >> c;
       switch (c) {
         case 1:
-          cout << "Siz Roza gulin tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz Roza gulin tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += mas[c - 1].bag;
@@ -147,8 +148,8 @@ int main() {
           zak(sum, car);
           break;
         case 2:
-          cout << "Siz tulpan gulin tandadynyz" << endl
-               << "Qansha dana algynyz keledy:" << endl;
+          cout << "\t\t\t\tSiz tulpan gulin tandadynyz" << endl
+               << "\t\t\t\tQansha dana algynyz keledy:" << endl;
           cin >> sht;
           for (int i = 0; i < sht; i++) {
             sum += mas[c - 1].bag;
@@ -156,8 +157,8 @@ int main() {
           zak(sum, car);
           break;
     case 3:
-      cout << "Siz Lilia gulin tandadynyz" << endl
-           << "Qansha dana algynyz keledy:" << endl;
+      cout << "\t\t\t\tSiz Lilia gulin tandadynyz" << endl
+           << "\t\t\t\tQansha dana algynyz keledy:" << endl;
       cin >> sht;
       for (int i = 0; i < sht; i++) {
         sum += mas[c - 1].bag;
@@ -165,8 +166,8 @@ int main() {
       zak(sum, car);
       break;
     case 4:
-      cout << "Siz Gerber gulin tandadynyz" << endl
-           << "Qansha dana algynyz keledy:" << endl;
+      cout << "\t\t\t\tSiz Gerber gulin tandadynyz" << endl
+           << "\t\t\t\tQansha dana algynyz keledy:" << endl;
       cin >> sht;
       for (int i = 0; i < sht; i++) {
         sum += mas[c - 1].bag;
@@ -174,8 +175,8 @@ int main() {
       zak(sum, car);
       break;
     case 5:
-      cout << "Siz Kally gulin tandadynyz" << endl
-           << "Qansha dana algynyz keledy:" << endl;
+      cout << "\t\t\t\tSiz Kally gulin tandadynyz" << endl
+           << "\t\t\t\tQansha dana algynyz keledy:" << endl;
       cin >> sht;
       for (int i = 0; i < sht; i++) {
         sum += mas[c - 1].bag;
@@ -183,8 +184,8 @@ int main() {
       zak(sum, car);
       break;
     case 6:
-      cout << "Siz Georgin gulin tandadynyz" << endl
-           << "Qansha dana algynyz keledy:" << endl;
+      cout << "\t\t\t\tSiz Georgin gulin tandadynyz" << endl
+           << "\t\t\t\tQansha dana algynyz keledy:" << endl;
       cin >> sht;
       for (int i = 0; i < sht; i++) {
         sum += mas[c - 1].bag;
@@ -192,8 +193,8 @@ int main() {
       zak(sum, car);
       break;
     case 7:
-      cout << "Siz Pion gulin tandadynyz" << endl
-           << "Qansha dana algynyz keledy:" << endl;
+      cout << "\t\t\t\tSiz Pion gulin tandadynyz" << endl
+           << "\t\t\t\tQansha dana algynyz keledy:" << endl;
       cin >> sht;
       for (int i = 0; i < sht; i++) {
         sum += mas[c - 1].bag;
@@ -201,8 +202,8 @@ int main() {
       zak(sum, car);
       break;
     case 8:
-      cout << "Siz Astra gulin tandadynyz" << endl
-           << "Qansha dana algynyz keledy:" << endl;
+      cout << "\t\t\t\tSiz Astra gulin tandadynyz" << endl
+           << "\t\t\t\tQansha dana algynyz keledy:" << endl;
       cin >> sht;
       for (int i = 0; i < sht; i++) {
         sum += mas[c - 1].bag;
@@ -210,11 +211,49 @@ int main() {
       zak(sum, car);
       break;
     default:
-  	cout<<"Qate nomer tandadynyz!";
+  	cout<<"\t\t\t\tQate nomer tandadynyz!";
   }
   break;
-  default:
-  	cout<<"Exit...";
+  case 3:
+  	char s[10];
+  
+    cout << "\t\t\t\t\t===============================" << endl;
+    cout << "\t\t\t\t\t|          Izdeu              |" << endl;
+    cout << "\t\t\t\t\t===============================" << endl;
+    cout << "\t\t\t\t\t| Izdeu:\t ";
+  	cin>>s;
+    cout << "\t\t\t\t\t|-------------------------------" << endl;
+    cout << "\t\t\t\t\t|-------------------------------" << endl;
+    cout << "\t\t\t\t\t| Izdeu Natijelery :           |" << endl;
+    cout << "\t\t\t\t\t|-------------------------------" << endl;
+  	bool found = false;
+  	for ( int i=0; i<m; i++){
+  		if(arr[i].bukaty == s){
+  cout << "\t\t\t\tBuket nomeri:" << arr[i].buknum << endl;
+  cout << "\t\t\t\tBuket turi:" << arr[i].bukaty << endl;
+  cout << "\t\t\t\tBukettegi gul:" << arr[i].gul << endl;
+  cout << "\t\t\t\tBukettegi gul danasy:" << arr[i].sht << endl;
+  cout << "\t\t\t\tBuket razmeri:" << arr[i].razmer << " sm" << endl;
+  cout << "\t\t\t\tBuket orau turi:" << arr[i].up << endl;
+  cout << "\t\t\t\tBuket bagasy:" << arr[i].bukbag << "  tenge" << endl;
+  cout <<"\t\t\t\t-------------------------------"<<endl;
+  found = true;
+		}
+	  }
+  	bool found2 = false;
+  	for ( int i=0; i<n; i++){
+  		if(mas[i].gulaty == s){
+  cout << "\t\t\t\tGul nomeri:" << mas[i].gulnum << endl;
+  cout << "\t\t\t\tGul turi:" << mas[i].gulaty << endl;
+  cout << "\t\t\t\tGul tusi:" << mas[i].tus << endl;
+  cout << "\t\t\t\tGul olshemi:" << mas[i].raz << endl;
+  cout << "\t\t\t\tGul bagasy:" << mas[i].bag << "  tenge" << endl;
+  cout <<"\t\t\t\t-------------------------------"<<endl;
+  found2 = true;
+		  }
+	  }
+  	if(!found2 && !found){
+  		cout<<"\t\t\t\tOndai Natije joq";
+	  }
 }
-
 }
