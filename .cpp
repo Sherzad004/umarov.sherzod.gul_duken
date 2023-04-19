@@ -42,8 +42,9 @@ void zak(int sum, int car) {
   cout << "\t\t\t\tTapsyryz  " << sum << " tenge boldy" << endl;
   cout << "\t\t\t\tZakaz beru ushin card nomer engiziniz:  ";
   cin >> car;
-  cout << "\t\t\t\tTapsyrys qabyldandy " << endl
-       << "\t\t\t\tTapsyryz dayn bolganda habarlaimyz" << endl;
+  cout << "\t\t\t\tTapsyrys qabyldandy " << endl;
+  cout<< "\t\t\t\tTapsyryz dayn bolganda habarlaimyz" << endl;
+  cout<<"\t\t\t\tbailanys nomer: +77007531710"<<endl<<"\t\t\t\tEmail:umarovsherzod004@gmail.com"<<endl;
 }
 
 int main() {
